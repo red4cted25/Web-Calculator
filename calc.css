@@ -1,16 +1,18 @@
 body {
     background-color: rgb(93, 163, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .calculator {
+    display: inline-block;
     background-color: #e1d8c9;
     border-radius: 15px;
     width: 400px;
     height: 270px;
     padding: 5px 5px 5px 5px;
     text-align: center;
-    position: absolute;
-        top: 30%;
-        left: 35%;
 }
 
 input[type="text"] {
