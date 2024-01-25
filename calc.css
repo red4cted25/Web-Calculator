@@ -24,7 +24,7 @@ input[type="text"] {
     font-size: 24px;
     margin: 10px 10px 10px 5px;
     background-color: #a0b9a3;
-    background-image: url(face.jpg);
+    background-image: url(./Images/face.jpg);
     background-repeat: no-repeat;
     background-position: 3px -5px;
 }
