@@ -14,7 +14,7 @@ function number(num) {
 function decimal() {
     input.value += '.';
 }
-  
+
 function divide() {
     input.value += '/';
 } 
@@ -22,11 +22,11 @@ function divide() {
 function multiply() {
     input.value += '*';
 }
-  
+
 function minus() {
     input.value += '-';  
 }
-  
+
 function plus() {
     input.value += '+';
 }
