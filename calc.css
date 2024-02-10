@@ -1,18 +1,18 @@
 body {
     background-color: rgb(93, 163, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 .calculator {
-    display: inline-block;
     background-color: #e1d8c9;
     border-radius: 15px;
     width: 400px;
     height: 270px;
     padding: 5px 5px 5px 5px;
     text-align: center;
+    position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+    margin: auto;
 }
 
 input[type="text"] {
@@ -23,14 +23,6 @@ input[type="text"] {
     height: 50px;
     font-size: 24px;
     margin: 10px 10px 10px 5px;
-    background-color: #a0b9a3;
-    background-image: url(./Images/face.jpg);
-    background-repeat: no-repeat;
-    background-position: 3px -5px;
-}
-
-input[type="text"]:focus {
-    background-image: none;
 }
 
 button {
@@ -42,8 +34,15 @@ button {
     color: #eee7df;
 }
 
+button:hover {
+    background-color: #21292f;
+}
+
 .operation {
     background-color: #fa821d;
     border-color: #fa821d;
-    font-size: large;
+}
+
+.operation:hover {
+    background-color: #a94c00;
 }

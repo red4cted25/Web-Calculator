@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Calculator</title>
-    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="calc.css">
 </head>
 <body>
     <div class="calculator">
         <input type="text" id="target">
-        <button class="special" onclick="coolio()">AC</button>
-        <button class="special" onclick="clear()">CE</button>
-        <button class="special" onclick="del()">DEL</button>
-        <button class="operation" onclick="divide()">&#247;</button>
-        <button class="number" onclick="coolio()">1</button>
-        <button class="number" onclick="coolio()">2</button>
-        <button class="number" onclick="coolio()">3</button>
-        <button class="operation" onclick="multiply()">&#215;</button>
-        <button class="number" onclick="coolio()">4</button>
-        <button class="number" onclick="coolio()">5</button>
-        <button class="number" onclick="coolio()">6</button>
-        <button class="operation" onclick="minus()">&#8722;</button>
-        <button class="number" onclick="coolio()">7</button>
-        <button class="number" onclick="coolio()">8</button>
-        <button class="number" onclick="coolio()">9</button>
-        <button class="operation" onclick="plus()">+</button>
-        <button class="number" onclick="coolio()">0</button>
-        <button class="number" onclick="coolio()">00</button>
-        <button class="number" onclick="decimal()">.</button>
-        <button class="operation" id="equal" onclick="coolio()">=</button>
+        <button class="special" id="all-clear" onclick="coolio()">AC</button>
+        <button class="special" id="clear-entry" onclick="coolio()">CE</button>
+        <button class="special" id="delete" onclick="del()">DEL</button>
+        <button class="operation" id="divide" onclick="divide()">/</button>
+        <button class="number" id="num1" onclick="coolio('1')">1</button>
+        <button class="number" id="num2" onclick="coolio('2')">2</button>
+        <button class="number" id="num3" onclick="coolio('3')">3</button>
+        <button class="operation" id="multiply" onclick="multiply()">*</button>
+        <button class="number" id="num4" onclick="coolio('4')">4</button>
+        <button class="number" id="num5" onclick="coolio('5')">5</button>
+        <button class="number" id="num6" onclick="coolio('6')">6</button>
+        <button class="operation" id="subtract" onclick="subtract()">-</button>
+        <button class="number" id="num7" onclick="coolio('7')">7</button>
+        <button class="number" id="num8" onclick="coolio('8')">8</button>
+        <button class="number" id="num9" onclick="coolio('9')">9</button>
+        <button class="operation" id="add" onclick="add()">+</button>
+        <button class="number" id="num0" onclick="coolio('0')">0</button>
+        <button class="number" id="num00" onclick="coolio('00')">00</button>
+        <button class="number" id="numdot" onclick="coolio('0')">.</button>
+        <button class="operation" id="equal" onclick="equals()">=</button>
     </div>
     <script src="calc.js"></script>
 </body>

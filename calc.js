@@ -1,32 +1,30 @@
-let input = document.getElementById('target');
-function clear(){
-    input.value = "";
+function coolio(value) {
+    document.getElementById("target").value += value;
 }
 
-function del(){
-    input.value = input.value.slice(0, -1);
-}
-
-function number(num) {
-    input.value += num;
-}
-
-function decimal() {
-    input.value += '.';
+function del() {
+    let currentValue = document.getElementById("target").value;
+    document.getElementById("target").value = currentValue.slice(0, -1);
 }
 
 function divide() {
-    input.value += '/';
-} 
+    document.getElementById("target").value += "/";
+}
 
 function multiply() {
-    input.value += '*';
+    document.getElementById("target").value += "*";
 }
 
-function minus() {
-    input.value += '-';  
+function subtract() {
+    document.getElementById("target").value += "-";
 }
 
-function plus() {
-    input.value += '+';
+function add() {
+    document.getElementById("target").value += "+";
+}
+
+
+function equals() {
+    let equation = document.getElementById("target").value;
+    
 }
