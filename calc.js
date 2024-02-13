@@ -23,6 +23,9 @@ function add() {
     document.getElementById("target").value += "+";
 }
 
+function clear() {
+    
+}
 
 function equals() {
     let equation = document.getElementById("target").value;
