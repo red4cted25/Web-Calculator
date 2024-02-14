@@ -9,26 +9,38 @@
 <body>
     <div class="calculator">
         <input type="text" id="target">
-        <button class="special" id="all-clear" onclick="coolio()">AC</button>
-        <button class="special" id="trig-tab">TRIG</button>
-        <button class="special" id="delete" onclick="del()">DEL</button>
-        <button class="operation" id="divide" onclick="divide()">/</button>
-        <button class="number" id="num1" onclick="coolio('1')">1</button>
-        <button class="number" id="num2" onclick="coolio('2')">2</button>
-        <button class="number" id="num3" onclick="coolio('3')">3</button>
-        <button class="operation" id="multiply" onclick="multiply()">*</button>
-        <button class="number" id="num4" onclick="coolio('4')">4</button>
-        <button class="number" id="num5" onclick="coolio('5')">5</button>
-        <button class="number" id="num6" onclick="coolio('6')">6</button>
-        <button class="operation" id="subtract" onclick="subtract()">-</button>
-        <button class="number" id="num7" onclick="coolio('7')">7</button>
-        <button class="number" id="num8" onclick="coolio('8')">8</button>
-        <button class="number" id="num9" onclick="coolio('9')">9</button>
-        <button class="operation" id="add" onclick="add()">+</button>
-        <button class="number" id="num0" onclick="coolio('0')">0</button>
-        <button class="number" id="num00" onclick="coolio('00')">00</button>
-        <button class="number" id="numdot" onclick="coolio('0')">.</button>
-        <button class="operation" id="equal" onclick="equals()">=</button>
+        <div class="main-buttons">
+            <button id="all-clear" onclick="clearScreen()">AC</button>
+            <button id="trig-tab" onclick="openDrawer()">TRIG</button>
+            <button id="delete" onclick="del()">DEL</button>
+            <button id="divide" onclick="divide()">/</button>
+            <button id="num1" onclick="coolio('1')">1</button>
+            <button id="num2" onclick="coolio('2')">2</button>
+            <button id="num3" onclick="coolio('3')">3</button>
+            <button id="multiply" onclick="multiply()">*</button>
+            <button id="num4" onclick="coolio('4')">4</button>
+            <button id="num5" onclick="coolio('5')">5</button>
+            <button id="num6" onclick="coolio('6')">6</button>
+            <button id="subtract" onclick="subtract()">-</button>
+            <button id="num7" onclick="coolio('7')">7</button>
+            <button id="num8" onclick="coolio('8')">8</button>
+            <button id="num9" onclick="coolio('9')">9</button>
+            <button id="add" onclick="add()">+</button>
+            <button id="num0" onclick="coolio('0')">0</button>
+            <button id="num00" onclick="coolio('00')">00</button>
+            <button id="numdot" onclick="coolio('.')">.</button>
+            <button id="equal" onclick="equals()">=</button>
+        </div>
+        <div class="trig-buttons">
+            <button id="sine" onclick="coolio('sin')">sinx</button>
+            <button id="cos" onclick="coolio('cos')">cosx</button>
+            <button id="tan" onclick="coolio('tan')">tanx</button>
+            <button id="arcsine" onclick="coolio('arcsin')">arcsinx</button>
+            <button id="arccos" onclick="coolio('arccos')">arccosx</button>
+            <button id="arctan" onclick="coolio('arctan')">arctanx</button>
+            <button id="log" onclick="coolio('log')">log<sub>10</sub>x</button>
+            <button id="ln" onclick="coolio('ln')">lnx</button>
+        </div>
     </div>
     <script src="calc.js"></script>
 </body>

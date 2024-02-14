@@ -46,3 +46,17 @@ button:hover {
 .operation:hover {
     background-color: #a94c00;
 }
+
+.drawer {
+    display: none;
+    position: absolute;
+        top: 50px;
+        left: 0;
+    background: #e1d8c9;
+    width: 100px; 
+    padding: 10px;
+}
+
+.drawer:active {
+    display: block;
+}
