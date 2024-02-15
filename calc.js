@@ -19,6 +19,12 @@ const subtract = () => {
     document.getElementById("target").value += "-";
 }
 
+let numPar = 0
+const parenthesis = () => {
+    numPar += 1;
+    if(numPar % 2 == 0) {coolio(")")} else {coolio("(")}
+}
+
 const add = () => {
     document.getElementById("target").value += "+";
 }

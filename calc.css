@@ -55,8 +55,12 @@ button:hover {
     background: #e1d8c9;
     width: 100px; 
     padding: 10px;
+    transition: transform 0.3s ease; 
+    transform: translateX(-110%); 
+
 }
 
 .drawer:active {
     display: block;
+    transform: translateX(0); 
 }
