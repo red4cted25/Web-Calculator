@@ -48,19 +48,24 @@ button:hover {
 }
 
 .drawer {
-    display: none;
     position: absolute;
-        top: 50px;
+        top: 105%;
         left: 0;
-    background: #e1d8c9;
-    width: 100px; 
-    padding: 10px;
-    transition: transform 0.3s ease; 
-    transform: translateX(-110%); 
-
+    margin: auto;
+    background: #a59e92;
+    width: 400px; 
+    padding: 10px 5px 10px 5px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear; 
+    transform: translateY(-100%);
 }
 
-.drawer:active {
+.drawer.open {
     display: block;
-    transform: translateX(0); 
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); 
 }

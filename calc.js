@@ -50,5 +50,5 @@ const calculate = (expression) => {
 }
 
 const openDrawer = () => {
-    document.getElementById('trig-buttons').classList.toggle('active');
+    document.querySelector('.drawer').classList.toggle('open');
 }
